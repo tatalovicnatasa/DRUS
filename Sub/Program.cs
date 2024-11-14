@@ -14,7 +14,7 @@ namespace Sub
     {
         public void VariableValueUpdated(string nameOrAddress, int value)
         {
-            Console.WriteLine($"Vrednost promenljive {nameOrAddress}: {value}");
+            Console.WriteLine($"Vrednost promenljive! {nameOrAddress} : {value}");
         }
     }
     internal class Program
@@ -22,13 +22,11 @@ namespace Sub
         static ServiceReference1.SubClient subClient;
         static void Main(string[] args)
         {
-            Console.WriteLine("Unesite adresu ili naziv promenljive za pracenje (npr. 1001 ili 'Temperature'): ");
+            Console.WriteLine("Unesite adresu ili naziv promenljive za pracenje (npr. A1 ili 5): ");
             string nameOrAddress = Console.ReadLine();
 
             InstanceContext ic = new InstanceContext(new Callback());
             subClient = new ServiceReference1.SubClient(ic);
-
-            
 
             subClient.InitSub(nameOrAddress);
             Console.ReadLine();

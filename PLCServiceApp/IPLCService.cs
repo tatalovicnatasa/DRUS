@@ -28,7 +28,7 @@ namespace PLCServiceApp
     public interface ICallback
     {
         [OperationContract(IsOneWay = true)]
-        void VariableValueUpdated(string nameOrAddress, int value); // poruka je stigla 
+        void VariableValueUpdated(string nameOrAddress, int value);  
     }
 
 }

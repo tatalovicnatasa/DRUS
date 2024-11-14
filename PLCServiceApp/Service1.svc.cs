@@ -8,61 +8,51 @@ using System.Text;
 
 namespace PLCServiceApp
 {
-    // Servis : generise i salje vrednosti 
     public class Service1 : IPub, ISub
     {
 
-        // tip funkcije za obavestenje 
-        delegate void VariableUpdateHandler(string nameOrAddress, int value); // definise tip funkcije koja prima poruku
-        static event VariableUpdateHandler VariableUpdateEvent;// obavestava sve subscribere kada stigne 
+        delegate void VariableUpdateHandler(string nameOrAddress, int value); 
+        static event VariableUpdateHandler VariableUpdateEvent;
 
-        public static Dictionary<string, string> Variables = new Dictionary<string, string>{
-            { "A1", "V1" },  // Primer promenljive sa adresom A1
-            { "A2", "V2" },
-            { "A3", "V3" }
+        public static Dictionary<string, int> Variables = new Dictionary<string, int>{
+            { "A1", 5 },
+            { "A2", 6 },
+            { "A3", 8 }
         };
-
-        //cuva korisnike sa njihovim podacima
-        public static Dictionary<string, ICallback> HMIClients = new Dictionary<string, ICallback>(); // dodaje subscribere
-
-
-        // Registracija putem WCF servisa klijenata i pracenje promenljive
         public void InitSub(string nameOrAddress)
         {
-            // Provera da li je unesena adresa ili naziv promenljive koja postoji u rečniku
-            if (Variables.ContainsKey(nameOrAddress) || Variables.ContainsValue(nameOrAddress))
+
+            if (int.TryParse(nameOrAddress, out int value)) // Ako je vrednost broj
             {
-                // Ako promenljiva postoji, registrovanje HMI klijenta
-                if (!HMIClients.ContainsKey(nameOrAddress)) // ako nema 
+                var key = Variables.FirstOrDefault(kvp => kvp.Value == value).Key;
+
+                if (!string.IsNullOrEmpty(key))
                 {
-                    HMIClients.Add(nameOrAddress, OperationContext.Current.GetCallbackChannel<ICallback>());
-
-                    // Povezujemo callback metod
                     VariableUpdateEvent += OperationContext.Current.GetCallbackChannel<ICallback>().VariableValueUpdated;
-
-                    //Console.WriteLine($"HMI sa nazivom ili adresom {nameOrAddress} je uspešno registrovan.");
+                    VariableUpdateEvent?.Invoke(key, value);
                 }
                 else
                 {
-                    //klijent postoji 
-                    // Console.WriteLine($"HMI sa nazivom ili adresom {nameOrAddress} već postoji.");
+                    OperationContext.Current.GetCallbackChannel<ICallback>().VariableValueUpdated(nameOrAddress, 0);
                 }
             }
-            else
+            else 
             {
-                // Ako promenljiva ne postoji, vraćamo obaveštenje o grešci
-                Console.WriteLine($"Greška: Promenljiva sa nazivom ili adresom {nameOrAddress} ne postoji u PLC-u.");
-                OperationContext.Current.GetCallbackChannel<ICallback>().VariableValueUpdated(nameOrAddress, 0); // Vraća nulu
+                if (Variables.ContainsKey(nameOrAddress)) // kljuc 
+                {
+                    VariableUpdateEvent += OperationContext.Current.GetCallbackChannel<ICallback>().VariableValueUpdated;
+                    VariableUpdateEvent?.Invoke(nameOrAddress, Variables[nameOrAddress]); // Obaveštavamo klijenta o trenutnoj vrednosti
+                }
+                else
+                {
+                    OperationContext.Current.GetCallbackChannel<ICallback>().VariableValueUpdated(nameOrAddress, 0); 
 
-            } // nula 
+                }
+            }
         }
         public void SendVariable(string message, int value) //salje novu varijablu
         {
-            Console.WriteLine($"Vrednost promenljive {message} = {value}");
-            VariableUpdateEvent?.Invoke(message, value); 
-
-
+            VariableUpdateEvent?.Invoke($"nova vrednost {message} je stigla {DateTime.Now}", value);
         }
     }
 }
-
