@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Sol A\PLCServiceApp\bin\PLCServiceApp.dll.config
+C:\Users\User\source\repos\Sol A\PLCServiceApp\bin\PLCServiceApp.dll
+C:\Users\User\source\repos\Sol A\PLCServiceApp\bin\PLCServiceApp.pdb
+C:\Users\User\source\repos\Sol A\PLCServiceApp\obj\Debug\PLCServiceApp.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Sol A\PLCServiceApp\obj\Debug\PLCServiceApp.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Sol A\PLCServiceApp\obj\Debug\PLCServiceApp.dll
+C:\Users\User\source\repos\Sol A\PLCServiceApp\obj\Debug\PLCServiceApp.pdb

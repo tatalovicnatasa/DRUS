@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\Sol A\\PLCServiceApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3258929F-708C-4C22-A20E-61F004B5B606}|PLCServiceApp.csproj|c:\\users\\user\\source\\repos\\sol a\\plcserviceapp\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3258929F-708C-4C22-A20E-61F004B5B606}|PLCServiceApp.csproj|solutionrelative:service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653BA82B-4C41-48F5-B81B-ADE9F674338E}|..\\Pub\\Pub.csproj|c:\\users\\user\\source\\repos\\sol a\\pub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21DD2743-A2D1-4255-BD49-B1FD3D8C48B0}|..\\Sub\\Sub.csproj|c:\\users\\user\\source\\repos\\sol a\\sub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3258929F-708C-4C22-A20E-61F004B5B606}|PLCServiceApp.csproj|C:\\Users\\User\\source\\repos\\Sol A\\PLCServiceApp\\iplcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3258929F-708C-4C22-A20E-61F004B5B606}|PLCServiceApp.csproj|solutionrelative:iplcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3258929F-708C-4C22-A20E-61F004B5B606}|PLCServiceApp.csproj|C:\\Users\\User\\source\\repos\\Sol A\\PLCServiceApp\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3258929F-708C-4C22-A20E-61F004B5B606}|PLCServiceApp.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21DD2743-A2D1-4255-BD49-B1FD3D8C48B0}|..\\Sub\\Sub.csproj|c:\\users\\user\\source\\repos\\sol a\\sub\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653BA82B-4C41-48F5-B81B-ADE9F674338E}|..\\Pub\\Pub.csproj|c:\\users\\user\\source\\repos\\sol a\\pub\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Sol A\\Sub\\App.config",
+              "RelativeDocumentMoniker": "..\\Sub\\App.config",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Sol A\\Sub\\App.config",
+              "RelativeToolTip": "..\\Sub\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-14T14:31:22.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Sol A\\Pub\\App.config",
+              "RelativeDocumentMoniker": "..\\Pub\\App.config",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Sol A\\Pub\\App.config",
+              "RelativeToolTip": "..\\Pub\\App.config",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-14T14:28:42.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Sol A\\Sub\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Sub\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Sol A\\Sub\\Program.cs",
+              "RelativeToolTip": "..\\Sub\\Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwCAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T13:43:35.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Sol A\\Pub\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Pub\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Sol A\\Pub\\Program.cs",
+              "RelativeToolTip": "..\\Pub\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T13:36:50.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Sol A\\PLCServiceApp\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Sol A\\PLCServiceApp\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-14T12:31:35.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPLCService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Sol A\\PLCServiceApp\\IPLCService.cs",
+              "RelativeDocumentMoniker": "IPLCService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Sol A\\PLCServiceApp\\IPLCService.cs",
+              "RelativeToolTip": "IPLCService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T08:56:56.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Service1.svc.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Sol A\\PLCServiceApp\\Service1.svc.cs",
+              "RelativeDocumentMoniker": "Service1.svc.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Sol A\\PLCServiceApp\\Service1.svc.cs",
+              "RelativeToolTip": "Service1.svc.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAswDAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T08:10:17.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Sol A\Pub\bin\Debug\Pub.exe.config
+C:\Users\User\source\repos\Sol A\Pub\bin\Debug\Pub.exe
+C:\Users\User\source\repos\Sol A\Pub\bin\Debug\Pub.pdb
+C:\Users\User\source\repos\Sol A\Pub\obj\Debug\Pub.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Sol A\Pub\obj\Debug\Pub.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Sol A\Pub\obj\Debug\Pub.exe
+C:\Users\User\source\repos\Sol A\Pub\obj\Debug\Pub.pdb
