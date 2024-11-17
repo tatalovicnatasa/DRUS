@@ -1,0 +1,9 @@
+Cela ideja je da PLC generise neke random vrednosti tj brojeve, a da HMI te brojeve prikazuje na grafiku a da se komunikacija odvija preko servisa 
+
+Logika problema: U sustini poenta je da moze da se unese adresa koja u mom slucaju izgleda kao A1 sto je string - kljuc i vrednost sto je vrednost, neki broj sto je tipa int
+tu je bio problem da se poveze da li je unet kljuc ili vrednost i da se proveri da li to postoji u recniku vrednost. Ako postoji dodeljuju se nove random vrednosti koje Pub deo generise. Dodat je deo ispisa u Sub da bih mogla da pratim da li na dobar nacin generise itd. Takodje je potrebno bilo proslediti vrednost nula ako pokusamo da se pretplatimo na neku adresu ili vrednost koja ne postoji.
+
+Resenje: Reseno je tako sto se u InitSub metodi proverava da li je to sto je prosledjeno tipa string ili int i onda u zavisnosti od toga ako je string da li ta vrednost postoji recniku (kljuc) a ako je int da li postoji ta vrednost, neki broj (vrednost kljuca)
+
+Rezultati: Poveze lepo kljuc i vrednost, i dodeljuje random vrednosti kako i treba, sto se tice grafika iskreno nisam stigla da uradim to 
+Meni je svaki domaci tezi od prethodnog i imam jako puno posla i ovo je moj maksimum 

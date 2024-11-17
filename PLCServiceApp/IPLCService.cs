@@ -21,7 +21,7 @@ namespace PLCServiceApp
     [ServiceContract(CallbackContract = typeof(ICallback))] // dvosmerna komunikacija, ima povratni kanal 
     public interface ISub // registracija HMI da moze da prati promenljive
     {
-        [OperationContract(IsOneWay = true)] // IMA SMISLA
+        [OperationContract(IsOneWay = true)] 
         void InitSub(string nameOrAddress); // subsrciber se registruje i kaze sta hoce da prati odnosno vrednost ilia dresu
     }
     // Metoda koja se poziva kad stigne nova vrednost promenljive 

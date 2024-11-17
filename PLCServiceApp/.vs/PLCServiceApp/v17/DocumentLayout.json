@@ -3,18 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\Sol A\\PLCServiceApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21DD2743-A2D1-4255-BD49-B1FD3D8C48B0}|..\\Sub\\Sub.csproj|c:\\users\\user\\source\\repos\\sol a\\sub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653BA82B-4C41-48F5-B81B-ADE9F674338E}|..\\Pub\\Pub.csproj|c:\\users\\user\\source\\repos\\sol a\\pub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3258929F-708C-4C22-A20E-61F004B5B606}|PLCServiceApp.csproj|c:\\users\\user\\source\\repos\\sol a\\plcserviceapp\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3258929F-708C-4C22-A20E-61F004B5B606}|PLCServiceApp.csproj|C:\\Users\\User\\source\\repos\\Sol A\\PLCServiceApp\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3258929F-708C-4C22-A20E-61F004B5B606}|PLCServiceApp.csproj|solutionrelative:service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3258929F-708C-4C22-A20E-61F004B5B606}|PLCServiceApp.csproj|C:\\Users\\User\\source\\repos\\Sol A\\PLCServiceApp\\iplcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3258929F-708C-4C22-A20E-61F004B5B606}|PLCServiceApp.csproj|solutionrelative:iplcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21DD2743-A2D1-4255-BD49-B1FD3D8C48B0}|..\\Sub\\Sub.csproj|c:\\users\\user\\source\\repos\\sol a\\sub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653BA82B-4C41-48F5-B81B-ADE9F674338E}|..\\Pub\\Pub.csproj|c:\\users\\user\\source\\repos\\sol a\\pub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21DD2743-A2D1-4255-BD49-B1FD3D8C48B0}|..\\Sub\\Sub.csproj|c:\\users\\user\\source\\repos\\sol a\\sub\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
@@ -34,21 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Service1.svc.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Sol A\\PLCServiceApp\\Service1.svc.cs",
               "RelativeDocumentMoniker": "Service1.svc.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Sol A\\PLCServiceApp\\Service1.svc.cs",
               "RelativeToolTip": "Service1.svc.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwDkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAowDYAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T21:18:18.812Z",
               "EditorCaption": ""
@@ -76,30 +72,31 @@
               "RelativeToolTip": "..\\Pub\\App.config",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-14T14:28:42.969Z"
+              "WhenOpened": "2024-11-14T14:28:42.969Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Sol A\\Sub\\Program.cs",
               "RelativeDocumentMoniker": "..\\Sub\\Program.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Sol A\\Sub\\Program.cs",
               "RelativeToolTip": "..\\Sub\\Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAqwCMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T13:43:35.75Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Sol A\\Pub\\Program.cs",
               "RelativeDocumentMoniker": "..\\Pub\\Program.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Sol A\\Pub\\Program.cs",
               "RelativeToolTip": "..\\Pub\\Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAswBkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T13:36:50.196Z",
               "EditorCaption": ""
@@ -119,16 +116,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "IPLCService.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Sol A\\PLCServiceApp\\IPLCService.cs",
               "RelativeDocumentMoniker": "IPLCService.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Sol A\\PLCServiceApp\\IPLCService.cs",
               "RelativeToolTip": "IPLCService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB4AAABEAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwBcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T08:56:56.89Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
             }
           ]
         }

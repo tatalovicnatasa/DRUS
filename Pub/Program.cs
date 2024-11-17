@@ -15,9 +15,9 @@ namespace Pub
         {
             while (true) 
             {
-                Thread.Sleep(3000);
+                Thread.Sleep(3000); // 15s ali 3 s za probu
 
-                pubClient.SendVariable("kkk", new Random().Next(0, 100)); 
+                pubClient.SendVariable("", new Random().Next(0, 100)); 
             }
 
         }

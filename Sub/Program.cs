@@ -4,6 +4,8 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
+using OxyPlot;
+using OxyPlot.Series;
 
 namespace Sub
 {
@@ -14,7 +16,7 @@ namespace Sub
     {
         public void VariableValueUpdated(string nameOrAddress, int value)
         {
-            Console.WriteLine($"Vrednost promenljive! {nameOrAddress} : {value}");
+            Console.WriteLine($" Vrednost promenljive: {nameOrAddress} : {value}");
         }
     }
     internal class Program
@@ -22,7 +24,7 @@ namespace Sub
         static ServiceReference1.SubClient subClient;
         static void Main(string[] args)
         {
-            Console.WriteLine("Unesite adresu ili naziv promenljive za pracenje (npr. A1 ili 5): ");
+            Console.WriteLine("Unos adrese ili promenljive za  A1 ili 5 ");
             string nameOrAddress = Console.ReadLine();
 
             InstanceContext ic = new InstanceContext(new Callback());
