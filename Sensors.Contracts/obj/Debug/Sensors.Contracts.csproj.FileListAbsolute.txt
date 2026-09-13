@@ -1,0 +1,6 @@
+C:\Users\User\Desktop\Projekat_DRUS\Sensors.Contracts\bin\Debug\Sensors.Contracts.dll
+C:\Users\User\Desktop\Projekat_DRUS\Sensors.Contracts\bin\Debug\Sensors.Contracts.pdb
+C:\Users\User\Desktop\Projekat_DRUS\Sensors.Contracts\obj\Debug\Sensors.Contracts.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Projekat_DRUS\Sensors.Contracts\obj\Debug\Sensors.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Projekat_DRUS\Sensors.Contracts\obj\Debug\Sensors.Contracts.dll
+C:\Users\User\Desktop\Projekat_DRUS\Sensors.Contracts\obj\Debug\Sensors.Contracts.pdb
