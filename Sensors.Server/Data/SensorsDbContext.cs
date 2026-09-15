@@ -7,10 +7,10 @@ namespace Sensors.Server.Data
     {
         // "name=SensorsDb" govori EF-u da potrazi connection string sa
         // imenom "SensorsDb" u App.config fajlu 
-        public SensorsDbContext() : base("name=SensorsDb") { }
+        public SensorsDbContext() : base("name=SensorsDb") { } // base("name=SensorsDb") je konstruktor DbContext-a, koji prima connection string name
         // EF pravi od ovoga tabele
-        public DbSet<Sensor1Reading> Sensor1Readings { get; set; }
-        public DbSet<Sensor2Reading> Sensor2Readings { get; set; }
+        public DbSet<Sensor1Reading> Sensor1Readings { get; set; } // ime DbSet-a je ime tabele u bazi
+        public DbSet<Sensor2Reading> Sensor2Readings { get; set; } // DbSet<Sensor2Reading> je tip tabele, a Sensor2Readings je ime tabele u bazi
         public DbSet<Sensor3Reading> Sensor3Readings { get; set; }
         public DbSet<Sensor4Reading> Sensor4Readings { get; set; }
         public DbSet<Sensor5Reading> Sensor5Readings { get; set; }
@@ -20,8 +20,8 @@ namespace Sensors.Server.Data
         public DbSet<Sensor9Reading> Sensor9Readings { get; set; }
         public DbSet<Sensor10Reading> Sensor10Readings { get; set; }
 
-        public DbSet<SensorStatusEntity> SensorStatuses { get; set; }
-        public DbSet<ConsensusSnapshot> ConsensusSnapshots { get; set; }
+        public DbSet<SensorStatusEntity> SensorStatuses { get; set; } // senzor status tabela
+        public DbSet<ConsensusSnapshot> ConsensusSnapshots { get; set; } // consensus snapshot tabela
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

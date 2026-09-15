@@ -24,6 +24,7 @@ namespace Sensors.Server
         // baza - SensorStatuses tabela - je "trajna" kopija istog stanja).
         private readonly Dictionary<int, bool> _activeMap = new Dictionary<int, bool>(); // koji je ahtivan
         private readonly Dictionary<int, DateTime> _lastHeartbeat = new Dictionary<int, DateTime>(); // kad se poslednji put javio senzor
+        private readonly object _consoleLock = new object();
 
 
         // PREPISIVANJE METODA KOJE MORAJU DA SE IMPLEMENTIRAJU 
@@ -83,17 +84,20 @@ namespace Sensors.Server
 
         private void PrintAlarm(int sensorId, double value, AlarmPriority alarm)
         {
-            var prev = Console.ForegroundColor;
-            Console.ForegroundColor = alarm == AlarmPriority.Priority1 ? ConsoleColor.Yellow
-                                     : alarm == AlarmPriority.Priority2 ? ConsoleColor.DarkYellow
-                                     : alarm == AlarmPriority.Priority3 ? ConsoleColor.Red
-                                     : ConsoleColor.Gray;
+            lock (_consoleLock)
+            {
+                var prev = Console.ForegroundColor;
+                Console.ForegroundColor = alarm == AlarmPriority.Priority1 ? ConsoleColor.Yellow
+                                         : alarm == AlarmPriority.Priority2 ? ConsoleColor.DarkYellow
+                                         : alarm == AlarmPriority.Priority3 ? ConsoleColor.Red
+                                         : ConsoleColor.Gray;
 
-            Console.WriteLine(alarm != AlarmPriority.None
-                ? $"[ALARM {(int)alarm}] S{sensorId} -> {value:F2} @ {DateTime.UtcNow:HH:mm:ss}"
-                : $"S{sensorId} -> {value:F2} @ {DateTime.UtcNow:HH:mm:ss}");
+                Console.WriteLine(alarm != AlarmPriority.None
+                    ? $"[ALARM {(int)alarm}] S{sensorId} -> {value:F2} @ {DateTime.UtcNow:HH:mm:ss}"
+                    : $"S{sensorId} -> {value:F2} @ {DateTime.UtcNow:HH:mm:ss}");
 
-            Console.ForegroundColor = prev;
+                Console.ForegroundColor = prev;
+            }
         }
 
         public async Task<double?> GetLatestConsensusAsync()
@@ -162,21 +166,21 @@ namespace Sensors.Server
                 _lastHeartbeat[sensorId] = DateTime.UtcNow;
                 //_activeMap[sensorId] = isCurrentlyActive; 
 
-                if (!_activeMap.ContainsKey(sensorId))
+                if (!_activeMap.ContainsKey(sensorId)) // ako jos uvek ne postoji
                 {
-                    _activeMap[sensorId] = isCurrentlyActive;
+                    _activeMap[sensorId] = isCurrentlyActive; // inicijalno postavljanje
                 }
             }
 
-            using (var db = new SensorsDbContext())
+            using (var db = new SensorsDbContext()) // upis u bazu (trajna kopija stanja senzora)
             {
                 var status = db.SensorStatuses.Find(sensorId);
-                if (status == null)
+                if (status == null) // ako ne postoji, kreira se novi red u tabeli
                     db.SensorStatuses.Add(new SensorStatusEntity { SensorId = sensorId, IsActive = isCurrentlyActive, LastHeartbeatUtc = DateTime.UtcNow });
                 else
                 {
-                    status.IsActive = isCurrentlyActive;
-                    status.LastHeartbeatUtc = DateTime.UtcNow;
+                    status.IsActive = isCurrentlyActive; // update postojeceg reda
+                    status.LastHeartbeatUtc = DateTime.UtcNow; // update vremena poslednjeg heartbeat-a
                 }
                 db.SaveChanges();
             }
@@ -188,7 +192,7 @@ namespace Sensors.Server
         {
             lock (_lock)
             {
-                return Task.FromResult(_activeMap.TryGetValue(sensorId, out var active) && active);
+                return Task.FromResult(_activeMap.TryGetValue(sensorId, out var active) && active); // fromResult je brza metoda koja vraca Task<bool> sa rezultatom, bez potrebe za await
             }
         }
 

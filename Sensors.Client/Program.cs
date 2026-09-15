@@ -14,6 +14,7 @@ namespace Sensors.Client
         static readonly bool[] _isActive = new bool[11];
         static readonly Random _rng = new Random(); // za simulaciju random vremena cekanja i vrednosti senzora
         static readonly object _rngLock = new object();
+        static readonly object _consoleLock = new object(); // dodato
 
         static void Main()
         {
@@ -36,15 +37,15 @@ namespace Sensors.Client
 
             for (int i = 1; i <= 10; i++)
             {
-                int sid = i;
+                int sid = i; // lokalna kopija za closure
                 // Svaki senzor pravi SVOJ NEZAVISAN proxy/kanal - ne deli se vise!
-                var binding = new NetTcpBinding();
+                var binding = new NetTcpBinding(); // Koristimo NetTcpBinding za WCF komunikaciju
                 var address = new EndpointAddress("net.tcp://localhost:9001/SensorService");
-                var factory = new ChannelFactory<ISensorService>(binding, address);
-                ISensorService myProxy = factory.CreateChannel();
+                var factory = new ChannelFactory<ISensorService>(binding, address); // Napravi novi kanal za svakog senzora
+                ISensorService myProxy = factory.CreateChannel(); // instanca generisanog remote proxy-a za komunikaciju sa serverom
 
-                _ = Task.Run(() => SensorLoop(sid, myProxy));
-                _ = Task.Run(() => HeartbeatLoop(sid, myProxy));
+                _ = Task.Run(() => SensorLoop(sid, myProxy)); // pokreni petlju za generisanje ocitavanja
+                _ = Task.Run(() => HeartbeatLoop(sid, myProxy)); // pokreni petlju za heartbeat
             }
 
 
@@ -96,14 +97,15 @@ namespace Sensors.Client
             while (true)
             {
                 try
-                {
+                {   // simulacija vremena cekanja izmedju ocitavanja 
+                    // zakljucavamo jer Random nije thread-safe, a imamo 10 senzora u paraleli
                     int secs = NextInt(1, 11); // 1-10s
-                    await Task.Delay(TimeSpan.FromSeconds(secs));
+                    await Task.Delay(TimeSpan.FromSeconds(secs)); // simulacija vremena cekanja izmedju ocitavanja
 
-                    if (_sleeping[sensorId]) continue;
+                    if (_sleeping[sensorId]) continue; 
 
-                    // Zahtev 2: pitaj server da li sam trenutno aktivan (polling, zamena za duplex)
-                    try { _isActive[sensorId] = await proxy.AmIActiveAsync(sensorId); }
+                    // Zahtev 2: pitaj server da li sam trenutno aktivan
+                    try { _isActive[sensorId] = await proxy.AmIActiveAsync(sensorId); } // proxy koristi AmIActiveAsync da proveri da li je senzor aktivan ili u standby modu
                     catch { /* server privremeno nedostupan, ostani na poslednjoj poznatoj vrednosti */ }
 
                     if (!_isActive[sensorId]) continue; // standby ne salje ocitavanja
@@ -119,7 +121,7 @@ namespace Sensors.Client
                     var encrypted = CryptoHelper.Encrypt(payload);
                     //Console.WriteLine($"[DEMO] Original: \"{payload}\" -> Sifrovano (hex): {BitConverter.ToString(encrypted).Replace("-", "")}");
                     var signature = CryptoHelper.Sign(encrypted, messageId, timestamp);
-                    await proxy.SubmitReadingAsync(sensorId, encrypted, signature, messageId, timestamp, alarmLevel);
+                    await proxy.SubmitReadingAsync(sensorId, encrypted, signature, messageId, timestamp, alarmLevel); // salji ocitavanje serveru
 
                 }
                 catch (Exception ex)
@@ -133,18 +135,21 @@ namespace Sensors.Client
 
         static void PrintReading(int sensorId, double value, AlarmPriority alarm)
         {
-            if (alarm == AlarmPriority.None)
+            lock (_consoleLock) // added
             {
-                Console.WriteLine($"S{sensorId} -> {value:F2} at {DateTime.UtcNow:HH:mm:ss}");
-                return;
-            }
+                if (alarm == AlarmPriority.None)
+                {
+                    Console.WriteLine($"S{sensorId} -> {value:F2} at {DateTime.UtcNow:HH:mm:ss}");
+                    return;
+                }
 
-            var prev = Console.ForegroundColor;
-            Console.ForegroundColor = alarm == AlarmPriority.Priority1 ? ConsoleColor.Yellow
-                                     : alarm == AlarmPriority.Priority2 ? ConsoleColor.DarkYellow
-                                     : ConsoleColor.Red;
-            Console.WriteLine($"[S{sensorId}] ALARM {(int)alarm}: {value:F2} at {DateTime.UtcNow:HH:mm:ss}");
-            Console.ForegroundColor = prev;
+                var prev = Console.ForegroundColor;
+                Console.ForegroundColor = alarm == AlarmPriority.Priority1 ? ConsoleColor.Yellow
+                                         : alarm == AlarmPriority.Priority2 ? ConsoleColor.DarkYellow
+                                         : ConsoleColor.Red;
+                Console.WriteLine($"[S{sensorId}] ALARM {(int)alarm}: {value:F2} at {DateTime.UtcNow:HH:mm:ss}");
+                Console.ForegroundColor = prev;
+            }
         }
 
         // Zahtev 2: SVIH 10 senzora salje heartbeat na 5s, bez obzira da li su aktivni.
@@ -156,7 +161,7 @@ namespace Sensors.Client
                 {
                     if (!_sleeping[sensorId])
                     {
-                        await proxy.HeartbeatAsync(sensorId, _isActive[sensorId]);
+                        await proxy.HeartbeatAsync(sensorId, _isActive[sensorId]); // salji heartbeat serveru, sa informacijom da li je trenutno aktivan ili u standby modu
                     }
                 
                 }
@@ -164,7 +169,7 @@ namespace Sensors.Client
                 {
                     Console.WriteLine($"[S{sensorId}] Heartbeat greska: {ex.Message}"); 
                 }
-                await Task.Delay(5000);
+                await Task.Delay(5000); // heartbeat na 5s
 
             }
         }

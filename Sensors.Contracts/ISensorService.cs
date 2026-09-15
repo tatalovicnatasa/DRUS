@@ -32,7 +32,7 @@ namespace Sensors.Contracts
         Task<Dictionary<int, double?>> GetLatestRawValuesAsync();
 
         [OperationContract]
-        Task<AlarmReportEntry[]> GetAlarmReportAsync();
+        Task<AlarmReportEntry[]> GetAlarmReportAsync(); // AlarmReportEntry[] je niz objekata koji sadrze podatke o alarmima
 
         [OperationContract]
         Task HeartbeatAsync(int sensorId, bool isCurrentlyActive);

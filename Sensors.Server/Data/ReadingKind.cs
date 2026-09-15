@@ -10,7 +10,7 @@ namespace Sensors.Server.Data
     // ReadingKind.Raw/ReadingKind.Consensus
     public enum ReadingKind
     {
-        Raw = 0,
-        Consensus = 1
+        Raw = 0, // vrednost koja je procitana sa senzora
+        Consensus = 1 // vrednost koja je rezultat konsenzusa
     }
 }

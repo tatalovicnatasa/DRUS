@@ -3,46 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE299FFC-5E31-4B48-A7AD-2C3F5A6DABD6}|Sensors.Server\\Sensors.Server.csproj|C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\sensors.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE299FFC-5E31-4B48-A7AD-2C3F5A6DABD6}|Sensors.Server\\Sensors.Server.csproj|solutionrelative:sensors.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE299FFC-5E31-4B48-A7AD-2C3F5A6DABD6}|Sensors.Server\\Sensors.Server.csproj|C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\sensors.server\\sensorserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE299FFC-5E31-4B48-A7AD-2C3F5A6DABD6}|Sensors.Server\\Sensors.Server.csproj|c:\\users\\user\\desktop\\projekat_drus\\sensorsystem\\sensors.server\\sensorserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE299FFC-5E31-4B48-A7AD-2C3F5A6DABD6}|Sensors.Server\\Sensors.Server.csproj|solutionrelative:sensors.server\\sensorserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{160192BF-6BFD-429C-BEB8-096E48C4CF4A}|Sensors.ReportClient\\Sensors.ReportClient.csproj|c:\\users\\user\\desktop\\projekat_drus\\sensorsystem\\sensors.reportclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{160192BF-6BFD-429C-BEB8-096E48C4CF4A}|Sensors.ReportClient\\Sensors.ReportClient.csproj|solutionrelative:sensors.reportclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9754BABA-EDCB-4460-AB81-2A7F3A9D84EE}|Sensors.Contracts\\Sensors.Contracts.csproj|c:\\users\\user\\desktop\\projekat_drus\\sensorsystem\\sensors.contracts\\isensorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9754BABA-EDCB-4460-AB81-2A7F3A9D84EE}|Sensors.Contracts\\Sensors.Contracts.csproj|solutionrelative:sensors.contracts\\isensorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9754BABA-EDCB-4460-AB81-2A7F3A9D84EE}|Sensors.Contracts\\Sensors.Contracts.csproj|c:\\users\\user\\desktop\\projekat_drus\\sensorsystem\\sensors.contracts\\enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9754BABA-EDCB-4460-AB81-2A7F3A9D84EE}|Sensors.Contracts\\Sensors.Contracts.csproj|solutionrelative:sensors.contracts\\enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9754BABA-EDCB-4460-AB81-2A7F3A9D84EE}|Sensors.Contracts\\Sensors.Contracts.csproj|C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\sensors.contracts\\cryptohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9754BABA-EDCB-4460-AB81-2A7F3A9D84EE}|Sensors.Contracts\\Sensors.Contracts.csproj|solutionrelative:sensors.contracts\\cryptohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44F49372-1F24-4C78-9307-048F574BC1CB}|Sensors.Client\\Sensors.Client.csproj|C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\sensors.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44F49372-1F24-4C78-9307-048F574BC1CB}|Sensors.Client\\Sensors.Client.csproj|solutionrelative:sensors.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SensorsDb/True/SqlTable/dbo.Sensor4Reading.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{9754BABA-EDCB-4460-AB81-2A7F3A9D84EE}|Sensors.Contracts\\Sensors.Contracts.csproj|C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\sensors.contracts\\isensorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9754BABA-EDCB-4460-AB81-2A7F3A9D84EE}|Sensors.Contracts\\Sensors.Contracts.csproj|solutionrelative:sensors.contracts\\isensorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SensorsDb/True/SqlTable/dbo.ConsensusSnapshots.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{160192BF-6BFD-429C-BEB8-096E48C4CF4A}|Sensors.ReportClient\\Sensors.ReportClient.csproj|C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\sensors.reportclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{160192BF-6BFD-429C-BEB8-096E48C4CF4A}|Sensors.ReportClient\\Sensors.ReportClient.csproj|solutionrelative:sensors.reportclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44F49372-1F24-4C78-9307-048F574BC1CB}|Sensors.Client\\Sensors.Client.csproj|C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\sensors.client\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{44F49372-1F24-4C78-9307-048F574BC1CB}|Sensors.Client\\Sensors.Client.csproj|solutionrelative:sensors.client\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{160192BF-6BFD-429C-BEB8-096E48C4CF4A}|Sensors.ReportClient\\Sensors.ReportClient.csproj|C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\sensors.reportclient\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{160192BF-6BFD-429C-BEB8-096E48C4CF4A}|Sensors.ReportClient\\Sensors.ReportClient.csproj|solutionrelative:sensors.reportclient\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{DE299FFC-5E31-4B48-A7AD-2C3F5A6DABD6}|Sensors.Server\\Sensors.Server.csproj|C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\sensors.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE299FFC-5E31-4B48-A7AD-2C3F5A6DABD6}|Sensors.Server\\Sensors.Server.csproj|solutionrelative:sensors.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -52,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -60,138 +38,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ISensorService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.Contracts\\ISensorService.cs",
               "RelativeDocumentMoniker": "Sensors.Contracts\\ISensorService.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.Contracts\\ISensorService.cs",
               "RelativeToolTip": "Sensors.Contracts\\ISensorService.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAA/wA8AAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAACgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T10:05:38.013Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Enum.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.Contracts\\Enum.cs",
-              "RelativeDocumentMoniker": "Sensors.Contracts\\Enum.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.Contracts\\Enum.cs",
-              "RelativeToolTip": "Sensors.Contracts\\Enum.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBsAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T10:05:16.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "dbo.ConsensusSnapshots [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SensorsDb/True/SqlTable/dbo.ConsensusSnapshots.sql",
-              "ToolTip": "dbo.ConsensusSnapshots [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-09-11T09:46:42.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "dbo.Sensor4Reading [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SensorsDb/True/SqlTable/dbo.Sensor4Reading.sql",
-              "ToolTip": "dbo.Sensor4Reading [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-09-11T09:45:39.705Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CryptoHelper.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.Contracts\\CryptoHelper.cs",
-              "RelativeDocumentMoniker": "Sensors.Contracts\\CryptoHelper.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.Contracts\\CryptoHelper.cs",
-              "RelativeToolTip": "Sensors.Contracts\\CryptoHelper.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAgwEoAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T11:31:23.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-14T13:46:53.168Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.Server\\Program.cs",
-              "RelativeDocumentMoniker": "Sensors.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.Server\\Program.cs",
-              "RelativeToolTip": "Sensors.Server\\Program.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAApwKUAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T11:15:56.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "SensorServer.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.Server\\SensorServer.cs",
               "RelativeDocumentMoniker": "Sensors.Server\\SensorServer.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.Server\\SensorServer.cs",
               "RelativeToolTip": "Sensors.Server\\SensorServer.cs",
-              "ViewState": "AgIAAL4AAAAAAAAAAADwv5wAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAJwAAAAAAAAAAAArwKEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T11:14:27.536Z",
+              "WhenOpened": "2026-09-14T13:45:37.989Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.ReportClient\\App.config",
-              "RelativeDocumentMoniker": "Sensors.ReportClient\\App.config",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.ReportClient\\App.config",
-              "RelativeToolTip": "Sensors.ReportClient\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-09-10T10:49:59.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.ReportClient\\Program.cs",
-              "RelativeDocumentMoniker": "Sensors.ReportClient\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.ReportClient\\Program.cs",
-              "RelativeToolTip": "Sensors.ReportClient\\Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwB8AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T10:49:31.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.Client\\App.config",
-              "RelativeDocumentMoniker": "Sensors.Client\\App.config",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.Client\\App.config",
-              "RelativeToolTip": "Sensors.Client\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-09-10T10:49:03.067Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.Client\\Program.cs",
               "RelativeDocumentMoniker": "Sensors.Client\\Program.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.Client\\Program.cs",
               "RelativeToolTip": "Sensors.Client\\Program.cs",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAawHUAAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAJEAAAAAAAAAAAApwKMAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T10:17:20.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-14T13:43:11.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.ReportClient\\Program.cs",
+              "RelativeDocumentMoniker": "Sensors.ReportClient\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.ReportClient\\Program.cs",
+              "RelativeToolTip": "Sensors.ReportClient\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T13:42:52.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.Server\\Program.cs",
+              "RelativeDocumentMoniker": "Sensors.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Projekat_DRUS\\SensorSystem\\Sensors.Server\\Program.cs",
+              "RelativeToolTip": "Sensors.Server\\Program.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAYwEYAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T13:41:03.055Z"
             }
           ]
         }
